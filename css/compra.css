@@ -4,18 +4,45 @@ body{
     background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.menu{
-    background-color: rgb(255, 255, 255);
-    height: 65px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom:1px solid rgb(196, 80, 170) ;
-    box-shadow:  5px 0 10px rgba(88, 88, 88, 0.6);
-    align-items: center;
-    margin-bottom: 40px;
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+
+.navbar-scroll .navar-brand {
+  color:black;
+  font-family: 'Fredoka One', cursive;
+ 
+ 
+  text-align: center;
+  
+
 }
+
+.navbar-scroll .nav-link:hover {
+  color: black;
+  background-color:white
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars,
+
+
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #fff;
+  
+}
+
+
+a{
+    color: black;
+    
+}
+
+
 .logo{
     color: rgb(0, 0, 0);
     font-size: 35px;
@@ -25,39 +52,7 @@ body{
     font-family: 'Satisfy', cursive;
 }
 
-.menu_items{
-    display: flex;
-    list-style: none;
-    margin-right:190px ;
-    margin-top: 10px;
-    align-items: center;
 
-}
-.menu_items li{
-    border-radius: 3px;
-    margin: 0 5px
-    
-}
-.menu_items li a{
-    padding: 7px 13px;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    text-transform: uppercase;
-    color: rgb(8, 8, 8);
-    font-family: 'Fredoka One', cursive;
-}
-.menu_items li:hover, li.active{
-background-color: violet;
-transition: 4s;
-}
-.btn_menu{
-    margin-left: 0px;
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    display: none;
-}
 .btn-wsp{
     position: fixed;
     height: 55px;
@@ -79,4 +74,24 @@ transition: 4s;
    color: rgb(16, 211, 32);
   background-color: white;
   }
+  h2{
+
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
  
+  @media screen and (max-width: 400px)
+  {body{
+      height: 1000px;
+  }
+      
+    i{
+      margin-top:-95px ;}
+      h2{
+        
+          margin-bottom:90px ;
+      }
+      img{
+        margin-bottom: 40px;
+      }
+  }

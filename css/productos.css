@@ -92,3 +92,11 @@ li{
    color: rgb(16, 211, 32);
   background-color: white;
   }
+  @media screen and (max-width: 400px)
+    { body{
+
+     
+
+    }
+  
+  }
